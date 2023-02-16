@@ -1,0 +1,13 @@
+[package]
+name = "datetime_reader"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "datetime_reader"
+crate-type = ["cdylib"]
+
+[dependencies]
+chrono = "0.4.23"
+pyo3 = { version = "0.18.0", features = ["extension-module"] }
